@@ -31,7 +31,32 @@
                   <p class="text-muted"><b>Local Storage:</b> This read-only interface property provides access to the Document’s local storage object, the stored data is stored across browser sessions. Similar to sessionStorage, except that localStorage data gets cleared when the page session ends – that is when the page is closed. It is cleared when the last “private” tab of a browser is closed (localStorage data for a document loaded in a private browsing or incognito session).</p>
                   <p class="text-muted"><b>Session Storage:</b> Session Storage objects can be accessed using the sessionStorage read-only property. The difference between sessionStorage and localStorage is that localStorage data does not expire, whereas sessionStorage data is cleared when the page session ends.</p>
                 </div>
-            </div> 
+            </div>
+            <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Difference between global scope and local scope</h5>
+                  <p class="text-muted"><b>Global scope</b> — Global scope contains all of the things defined outside of all code blocks. A code block simply consists of grouped statements inside curly braces ({ }). if statement, loops, function are examples of structure that create a code block. A global variable has global scope. A global variable is accessible from anywhere in the code.</p>
+
+                  <p class="text-muted"><b>Local Scope</b> Local scope contains things defined inside code blocks. A local variable has local scope. A local variable is only accessible where it’s declared.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">How event loop works</h5>
+                  <p class="text-muted">The Event Loop has one simple job — to monitor the Call Stack and the Callback Queue. If the Call Stack is empty, the Event Loop will take the first event from the queue and will push it to the Call Stack, which effectively runs it. Such an iteration is called a tick in the Event Loop.</p>
+                  
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">How to get undefined?</h5>
+                  <p class="text-muted">Undefined is a property of the global object. That is, it is a variable in global scope. The initial value of undefined is the primitive value undefined.</p>
+
+                    <p class="text-muted">In all non-legacy browsers, undefined is a non-configurable, non-writable property. (Even when this is not the case, avoid overriding it.)</p>
+                    
+                    <p class="text-muted">A variable that has not been assigned a value is of type undefined. A method or statement also returns undefined if the variable that is being evaluated does not have an assigned value. A function returns undefined if a value was not returned.</p>
+                </div>
+            </div>
         </div>
     </div>
 
